@@ -20,7 +20,6 @@ from pyrogram.raw import types
 import config
 from config import adminlist, chatstats, clean, userstats
 from pyrogram.enums import ChatMembersFilter
-from strings import get_command
 from AnonXMusic import app, userbot
 from AnonXMusic.misc import SUDOERS
 from AnonXMusic.utils.database import (
