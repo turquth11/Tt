@@ -3,24 +3,24 @@ HELP_1 = """
 
 **/c** komutlarını kanalda kullanabilmek için, komutların başına **c** ekleyin.
 
-**/pause**: Çalan akışı duraklatır.
-**/resume**: Duraklatılmış akışı devam ettirir.
-**/skip**: Çalan akışı atlar ve sıradaki parçayı çalmaya başlar.
-**/end** veya **/stop**: Sıradaki parçayı atlar ve çalan akışı sonlandırır.
+**/pause veya /durdur**: Çalan akışı duraklatır.
+**/resume veya /devam**: Duraklatılmış akışı devam ettirir.
+**/skip veya /atla **: Çalan akışı atlar ve sıradaki parçayı çalmaya başlar.
+**/end** veya **/bitir**: Sıradaki parçayı atlar ve çalan akışı sonlandırır.
 **/player**: Etkileşimli bir oynatıcı paneli alır.
-**/queue**: Sıradaki parçaların listesini gösterir.
+**/queue veya /liste**: Sıradaki parçaların listesini gösterir.
 """
 HELP_2 = """
 **YETKİLİ KULLANICILAR:**
 
-**/auth [kullanıcı adı/kullanıcı_ID]**: Bir kullanıcıyı botun yetkili listesine ekler.
-**/unauth [kullanıcı adı/kullanıcı_ID]**: Bir kullanıcıyı yetkili kullanıcılar listesinden çıkarır.
-**/authusers**: Yetkili kullanıcıların listesini gösterir.
+**/auth veya /ver  [kullanıcı adı/kullanıcı_ID]**: Bir kullanıcıyı botun yetkili listesine ekler.
+**/unauth veya /al [kullanıcı adı/kullanıcı_ID]**: Bir kullanıcıyı yetkili kullanıcılar listesinden çıkarır.
+**/authusers veya /yetkili**: Yetkili kullanıcıların listesini gösterir.
 """
 HELP_3 = """
 **YAYIN YAPMA ÖZELLİĞİ**
 
-**/broadcast [mesaj veya bir mesaja yanıt]**: Bir mesajı sunucu sohbetlerine yayınlar.
+**/broadcast veya /reklam [mesaj veya bir mesaja yanıt]**: Bir mesajı sunucu sohbetlerine yayınlar.
 
 Yayın modları:
 **-pin**: Yayınlanan mesajları sunucu sohbetlerinde sabitler.
@@ -100,7 +100,7 @@ HELP_11 = """
 **v :** Video play için kullanılır.
 **force :** Zorla oynatma için kullanılır.
 
-/play veya /vplay : Video sohbetinde istenilen parçayı çalmaya başlar.
+/play , /vplay veya /oynat veya /voynat : Video sohbetinde istenilen parçayı çalmaya başlar.
 
 /playforce veya /vplayforce : Devam eden yayını durdurur ve istenilen parçayı çalmaya başlar.
 """
@@ -120,7 +120,7 @@ HELP_13 = """
 HELP_14 = """
 **SONG DOWNLOAD:**
 
-/song [şarkı adı/YouTube URL] : YouTube'dan herhangi bir parçayı MP3 veya MP4 formatında indirir.
+/song veya /bul [şarkı adı/YouTube URL] : YouTube'dan herhangi bir parçayı MP3 veya MP4 formatında indirir.
 """
 HELP_15 = """
 **SPEED COMMANDS:**
