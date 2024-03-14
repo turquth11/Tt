@@ -532,6 +532,13 @@ async def get_authuser(chat_id: int, name: str) -> Union[bool, dict]:
     else:
         return False
 
+async def is_cleanmode_on(chat_id: int) -> bool:
+    if chat_id not in cleanmode:
+        return True
+    else:
+        return False
+    
+
 async def get_user_top(chat_id: int, name: str) -> Union[bool, dict]:
     ids = await get_userss(chat_id)
     if name in ids:
