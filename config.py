@@ -76,6 +76,9 @@ BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
 votemode = {}
+chatstats = {}
+userstats = {}
+clean = {}
 autoclean = []
 confirmer = {}
 
