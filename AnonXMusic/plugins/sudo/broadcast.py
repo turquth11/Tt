@@ -21,9 +21,9 @@ import config
 from config import adminlist, chatstats, clean, userstats
 from pyrogram.enums import ChatMembersFilter
 from strings import get_command
-from AlexaMusic import app, userbot
-from AlexaMusic.misc import SUDOERS
-from AlexaMusic.utils.database import (
+from AnonXMusic import app, userbot
+from AnonXMusic.misc import SUDOERS
+from AnonXMusic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
@@ -36,8 +36,8 @@ from AlexaMusic.utils.database import (
     update_particular_top,
     update_user_top,
 )
-from AlexaMusic.utils.decorators.language import language
-from AlexaMusic.utils.formatters import alpha_to_int
+from AnonXMusic.utils.decorators.language import language
+from AnonXMusic.utils.formatters import alpha_to_int
 from config import OWNER_ID
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
