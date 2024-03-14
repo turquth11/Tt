@@ -557,6 +557,19 @@ async def delete_authuser(chat_id: int, name: str) -> bool:
     return False
 
 
+async def get_particulars(chat_id: int) -> Dict[str, int]:
+    ids = await chattopdb.find_one({"chat_id": chat_id})
+    if not ids:
+        return {}
+    return ids["vidid"]
+
+
+async def get_particular_top(chat_id: int, name: str) -> Union[bool, dict]:
+    ids = await get_particulars(chat_id)
+    if name in ids:
+        return ids[name]
+
+
 async def get_gbanned() -> list:
     results = []
     async for user in gbansdb.find({"user_id": {"$gt": 0}}):
