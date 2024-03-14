@@ -532,6 +532,19 @@ async def get_authuser(chat_id: int, name: str) -> Union[bool, dict]:
     else:
         return False
 
+async def get_user_top(chat_id: int, name: str) -> Union[bool, dict]:
+    ids = await get_userss(chat_id)
+    if name in ids:
+        return ids[name]
+
+
+async def update_user_top(chat_id: int, name: str, vidid: dict):
+    ids = await get_userss(chat_id)
+    ids[name] = vidid
+    await userdb.update_one({"chat_id": chat_id}, {"$set": {"vidid": ids}}, upsert=True)
+
+
+
 
 async def save_authuser(chat_id: int, name: str, note: dict):
     name = name
