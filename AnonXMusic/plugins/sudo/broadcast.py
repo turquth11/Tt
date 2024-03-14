@@ -39,7 +39,7 @@ from AnonXMusic.utils.decorators.language import language
 from AnonXMusic.utils.formatters import alpha_to_int
 from config import OWNER_ID
 
-BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
+BROADCAST_COMMAND = get_command("broadcast", "reklam")
 AUTO_DELETE = 5
 AUTO_SLEEP = 5
 IS_BROADCASTING = False
