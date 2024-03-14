@@ -38,7 +38,7 @@ from config import BANNED_USERS, OWNER_ID
 
 
 @app.on_message(
-    filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
+    filters.command(["settings", "setting", "ayarlar"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def settings_mar(client, message: Message, _):
@@ -276,7 +276,7 @@ async def playmode_ans(client, CallbackQuery, _):
             await set_playtype(CallbackQuery.message.chat.id, "Admin")
             Playtype = False
         else:
-            await set_playtype(CallbackQuery.message.chat.id, "Everyone")
+            await set_playtype(CallbackQuery.message.chat.id, "Herkes")
             Playtype = True
         playmode = await get_playmode(CallbackQuery.message.chat.id)
         if playmode == "Direct":
