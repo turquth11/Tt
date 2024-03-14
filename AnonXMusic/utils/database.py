@@ -611,6 +611,13 @@ async def get_particular_top(chat_id: int, name: str) -> Union[bool, dict]:
     if name in ids:
         return ids[name]
 
+async def update_particular_top(chat_id: int, name: str, vidid: dict):
+    ids = await get_particulars(chat_id)
+    ids[name] = vidid
+    await chattopdb.update_one(
+        {"chat_id": chat_id}, {"$set": {"vidid": ids}}, upsert=True
+    )
+
 
 async def get_gbanned() -> list:
     results = []
