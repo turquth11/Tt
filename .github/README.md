@@ -14,14 +14,14 @@
     ─「 𝘿𝙀𝙋𝙊𝙇𝙔 𝘿𝙀𝙈İ𝙍𝙔𝙊𝙇𝙐 」─
 </h3>
 
-<p align="center"><a href="https://railway.app/"> <img src="https://img.shields.io/badge/%20On%20𝙍𝙖𝙮𝙞𝙡𝙬𝙖𝙮-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://railway.app/"> <img src="𝙍𝙖𝙮𝙞𝙡𝙬𝙖𝙮-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 DESTEK 」─
 </h3>
 
 <p align="center">
-<a href="https://t.me/kumsalmuzikk"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/kumsalmuzikk"><img src="https://img.shields.io/badge/-destek%20kanal-black.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
